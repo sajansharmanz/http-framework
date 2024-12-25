@@ -1,0 +1,65 @@
+{
+  "name": "node-http-framework",
+  "version": "0.0.1",
+  "description": "Super fast, unopinionated minimal web framework based on uWebSockets.js",
+  "keywords": [
+    "uWebSockets",
+    "uWebSockets.js",
+    "web framework",
+    "api",
+    "res",
+    "res api",
+    "restful"
+  ],
+  "author": {
+    "name": "Sajan Sharma",
+    "email": "sajansharmanz@gmail.com",
+    "url": "https://sajansharma.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/sajansharmanz"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "exports": {
+    "default": "./dist/src/index.js",
+    "import": "./dist/src/index.js",
+    "node": "./dist/src/index.js",
+    "require": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "npx prettier . --write",
+    "lint": "npx eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/cookie": "^0.6.0",
+    "@types/cookie-signature": "^1.1.2",
+    "@types/node": "^22.10.2",
+    "@types/qs": "^6.9.17",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "cookie-signature": "^1.2.2",
+    "qs": "^6.13.1",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.51.0",
+    "zod": "^3.24.1"
+  }
+}
